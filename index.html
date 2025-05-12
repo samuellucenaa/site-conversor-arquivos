@@ -7,19 +7,40 @@
     <link rel="stylesheet" href="src/output.css">
 </head>
 <body>
-    <div class="">
-        <header class="bg-black text-white flex justify-between">
-            <div class="p-4">LOGO</div>
-            <nav>
-                <ul class="p-4 flex text-[#8e8e8f]">
-                    <li>Vídeo</li>
-                    <li class="px-2">PDF</li>
-                    <li>Áudio</li>
-                    <li class="pl-2">Conversores</li>
-                </ul>
-            </nav>
-            <div class="p-4 hover:bg-[#232324]"><a href="#">Entrar</a></div>
-        </header>
+    <header class="bg-black text-white flex justify-between">
+        <div class="p-4">LOGO</div>
+        <nav>
+            <ul class="p-4 flex text-[#9a9a9a]">
+                <li>Vídeo</li>
+                <li>Áudio</li>
+                <li class="px-2">PDF</li>
+                <li class="pl-2">Conversores</li>
+            </ul>
+        </nav>
+        <button class="p-4 hover:bg-[#232324]"><a href="#">Entrar</a></bugtton>
+    </header>
+
+    
+    <div class="modal w-full h-full fixed bg-[#00000099]">
+        <div class="modal-content w-[500px] bg-white flex flex-col items-center">
+            <h1 class="text-4xl font-bold">Crie sua conta aqui</h1>
+            <div class="flex items-center">
+                <img class="w-4 h-4" src="images/google-icon.svg" alt="">
+                <p>Entrar com o Google</p>
+            </div>
+            <div class="flex">
+                <img class="w-5 h-5" src="images/facebook-icon.svg" alt="">
+                <p>Entrar com o Facebook</p>
+            </div>
+            <p>ou</p>
+            <div>
+                <input type="email">
+                <input type="password">
+            </div>
+            <button>Crie a sua conta aqui</button>
+            Já tem uma conta? <a href="">Entrar</a>
+        </div>
     </div>
+    <script src="/scripts/script.js"></script>
 </body>
 </html>
