@@ -294,6 +294,9 @@
   .h-50 {
     height: calc(var(--spacing) * 50);
   }
+  .h-auto {
+    height: auto;
+  }
   .h-full {
     height: 100%;
   }
@@ -407,6 +410,12 @@
   .pt-\[30px\] {
     padding-top: 30px;
   }
+  .pr-12 {
+    padding-right: calc(var(--spacing) * 12);
+  }
+  .pr-28 {
+    padding-right: calc(var(--spacing) * 28);
+  }
   .text-4xl {
     font-size: var(--text-4xl);
     line-height: var(--tw-leading, var(--text-4xl--line-height));
@@ -477,6 +486,13 @@
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
         rotate: 180deg;
+      }
+    }
+  }
+  .group-hover\:flex-col {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        flex-direction: column;
       }
     }
   }
