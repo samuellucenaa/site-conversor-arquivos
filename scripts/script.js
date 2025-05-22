@@ -6,6 +6,10 @@ function fecharModal(){
     document.querySelector('.modal').classList.add('hidden');
 }
 
+function trocarImagem(id, novoSrc){
+    document.getElementById(id).src = novoSrc;
+}
+
 function alternarSenha(){
     let input = document.getElementById('senha');
     let img = document.getElementById('alternarSenha');
