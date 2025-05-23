@@ -81,19 +81,6 @@
                         <li class="flex p-4 pr-28 hover:bg-[#383838] hover:rounded-b-xl"><img class="w-5 h-5 mr-2" src="images/play-icon.svg" alt="">Vídeo</li>
                     </ul>
                 </li>
-                <li class="flex group p-4 hover:bg-[#232324]">
-                    <img class="w-5 h-5 mr-2" src="images/refresh-icon.svg" alt="">
-                    Conversores
-                    <img class="h-5 mt-[2px] transition-transform duration-300 group-hover:rotate-180" src="images/down-icon.svg" alt="">
-                    <ul class="absolute hidden rounded-b-xl group-hover:flex group-hover:flex-col top-[56px] left-[356px] w-auto h-auto bg-[#232324]">
-                        <li class="flex p-4 pr-28 hover:bg-[#383838]"><img class="w-5 h-5 mr-2" src="images/refresh-icon.svg" alt="">Conversores</li>
-                        <li class="flex p-4 pr-28 hover:bg-[#383838]"><img class="w-5 h-5 mr-2" src="images/refresh-icon.svg" alt="">Conversores</li>
-                        <li class="flex p-4 pr-28 hover:bg-[#383838]"><img class="w-5 h-5 mr-2" src="images/refresh-icon.svg" alt="">Conversores</li>
-                        <li class="flex p-4 pr-28 hover:bg-[#383838]"><img class="w-5 h-5 mr-2" src="images/refresh-icon.svg" alt="">Conversores</li>
-                        <li class="flex p-4 pr-28 hover:bg-[#383838]"><img class="w-5 h-5 mr-2" src="images/refresh-icon.svg" alt="">Conversores</li>
-                        <li class="flex p-4 pr-28 hover:bg-[#383838] hover:rounded-b-xl"><img class="w-5 h-5 mr-2" src="images/refresh-icon.svg" alt="">Conversores</li>
-                    </ul>
-                </li>
             </ul>
         </nav>
         <button class="flex p-4 hover:bg-[#232324] hover:cursor-pointer" onclick="abrirModal()">
@@ -102,7 +89,7 @@
         </button>
     </header>
 
-    <main class="mb-40">
+    <main>
         <div class="max-w-[915px] w-full m-auto">
             <div class="mt-20">
                 <img class="h-50 w-50 m-auto" src="images/logo.png" alt="">
@@ -124,14 +111,14 @@
                             <img id="volumeImg3" class="w-5 hover:underline hover:text-blue-800" src="images/volume-icon.svg" alt="">
                             <a class="hover:underline hover:text-blue-800" href="#" onmouseover="trocarImagem('volumeImg3', 'images/blue-volume-icon.svg')" onmouseout="trocarImagem('volumeImg3', 'images/volume-icon.svg')">Mudar Volume</a>
                         </div>
-                        <div class="flex items-center gap-3">
-                            <img id="volumeImg4" class="w-5 hover:underline hover:text-blue-800" src="images/volume-icon.svg" alt="">
-                            <a class="hover:underline hover:text-blue-800" href="#" onmouseover="trocarImagem('volumeImg4', 'images/blue-volume-icon.svg')" onmouseout="trocarImagem('volumeImg4', 'images/volume-icon.svg')">Mudar Volume</a>
-                        </div>
                     </div>
 
                     <div class="flex flex-col gap-y-4">
                         <div class="flex items-center mt-6 gap-3">
+                            <img id="volumeImg4" class="w-5 hover:underline hover:text-blue-800" src="images/volume-icon.svg" alt="">
+                            <a class="hover:underline hover:text-blue-800" href="#" onmouseover="trocarImagem('volumeImg4', 'images/blue-volume-icon.svg')" onmouseout="trocarImagem('volumeImg4', 'images/volume-icon.svg')">Mudar Volume</a>
+                        </div>
+                        <div class="flex items-center gap-3">
                             <img id="pdfImg5" class="w-5 hover:underline hover:text-blue-800" src="images/volume-icon.svg" alt="">
                             <a class="hover:underline hover:text-blue-800" href="#" onmouseover="trocarImagem('pdfImg5', 'images/blue-volume-icon.svg')" onmouseout="trocarImagem('pdfImg5', 'images/volume-icon.svg')">Mudar Volume</a>
                         </div>
@@ -139,7 +126,10 @@
                             <img id="volumeImg6" class="w-5 hover:underline hover:text-blue-800" src="images/volume-icon.svg" alt="">
                             <a class="hover:underline hover:text-blue-800" href="#" onmouseover="trocarImagem('volumeImg6', 'images/blue-volume-icon.svg')" onmouseout="trocarImagem('volumeImg6', 'images/volume-icon.svg')">Mudar Volume</a>
                         </div>
-                        <div class="flex items-center gap-3">
+                    </div>
+
+                    <div class="flex flex-col gap-y-4">
+                        <div class="flex items-center mt-6 gap-3">
                             <img id="volumeImg7" class="w-5 hover:underline hover:text-blue-800" src="images/volume-icon.svg" alt="">
                             <a class="hover:underline hover:text-blue-800" href="#" onmouseover="trocarImagem('volumeImg7', 'images/blue-volume-icon.svg')" onmouseout="trocarImagem('volumeImg7', 'images/volume-icon.svg')">Mudar Volume</a>
                         </div>
@@ -147,22 +137,10 @@
                             <img id="volumeImg8" class="w-5 hover:underline hover:text-blue-800" src="images/volume-icon.svg" alt="">
                             <a class="hover:underline hover:text-blue-800" href="#" onmouseover="trocarImagem('volumeImg8', 'images/blue-volume-icon.svg')" onmouseout="trocarImagem('volumeImg8', 'images/volume-icon.svg')">Mudar Volume</a>
                         </div>
-                    </div>
-
-                    <div class="flex flex-col gap-y-4">
-                        <div class="flex items-center mt-6 gap-3">
+                        <div class="flex items-center gap-3">
                             <img id="volumeImg9" class="w-5 hover:underline hover:text-blue-800" src="images/volume-icon.svg" alt="">
                             <a class="hover:underline hover:text-blue-800" href="#" onmouseover="trocarImagem('volumeImg9', 'images/blue-volume-icon.svg')" onmouseout="trocarImagem('volumeImg9', 'images/volume-icon.svg')">Mudar Volume</a>
                         </div>
-                        <div class="flex items-center gap-3">
-                            <img id="volumeImg10" class="w-5 hover:underline hover:text-blue-800" src="images/volume-icon.svg" alt="">
-                            <a class="hover:underline hover:text-blue-800" href="#" onmouseover="trocarImagem('volumeImg10', 'images/blue-volume-icon.svg')" onmouseout="trocarImagem('volumeImg10', 'images/volume-icon.svg')">Mudar Volume</a>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <img id="volumeImg11" class="w-5 hover:underline hover:text-blue-800" src="images/volume-icon.svg" alt="">
-                            <a class="hover:underline hover:text-blue-800" href="#" onmouseover="trocarImagem('volumeImg11', 'images/blue-volume-icon.svg')" onmouseout="trocarImagem('volumeImg11', 'images/volume-icon.svg')">Mudar Volume</a>
-                        </div>
-                    </div>
                 </div>
             </div>
 
@@ -172,51 +150,113 @@
                     <div class="flex flex-col ml-8 gap-y-4">
                         <div class="flex items-center mt-6 gap-3">
                             <img id="pdfImg1" class="w-6 hover:underline hover:text-blue-800" src="images/black-pdf-icon.svg" alt="">
-                            <a class="hover:underline hover:text-blue-800" href="#" onmouseover="trocarImagem('pdfImg1', 'images/blue-pdf-icon.svg')" onmouseout="trocarImagem('pdfImg1', 'images/black-pdf-icon.svg')">Conversor para PDF</a>
+                            <a class="hover:underline hover:text-blue-800" href="#" onmouseover="trocarImagem('pdfImg1', 'images/blue-pdf-icon.svg')" onmouseout="trocarImagem('pdfImg1', 'images/black-pdf-icon.svg')">Conversor de PDF</a>
                         </div>
                         <div class="flex items-center gap-3">
-                            <img id="pdfImg2" class="w-5 hover:underline hover:text-blue-800" src="images/black-pdf-icon.svg" alt="">
-                            <a class="hover:underline hover:text-blue-800" href="#" onmouseover="trocarImagem('pdfImg2', 'images/blue-pdf-icon.svg')" onmouseout="trocarImagem('pdfImg2', 'images/black-pdf-icon.svg')">Conversor para PDF</a>
+                            <img id="pdfImg2" class="w-6 hover:underline hover:text-blue-800" src="images/black-pdf-icon.svg" alt="">
+                            <a class="hover:underline hover:text-blue-800" href="#" onmouseover="trocarImagem('pdfImg2', 'images/blue-pdf-icon.svg')" onmouseout="trocarImagem('pdfImg2', 'images/black-pdf-icon.svg')">Conversor de PDF</a>
                         </div>
                         <div class="flex items-center gap-3">
-                            <img id="pdfImg3" class="w-5 hover:underline hover:text-blue-800" src="images/black-pdf-icon.svg" alt="">
-                            <a class="hover:underline hover:text-blue-800" href="#" onmouseover="trocarImagem('pdfImg3', 'images/blue-pdf-icon.svg')" onmouseout="trocarImagem('pdfImg3', 'images/black-pdf-icon.svg')">Conversor para PDF</a>
+                            <img id="pdfImg3" class="w-6 hover:underline hover:text-blue-800" src="images/black-pdf-icon.svg" alt="">
+                            <a class="hover:underline hover:text-blue-800" href="#" onmouseover="trocarImagem('pdfImg3', 'images/blue-pdf-icon.svg')" onmouseout="trocarImagem('pdfImg3', 'images/black-pdf-icon.svg')">Conversor de PDF</a>
                         </div>
                     </div>
 
                     <div class="flex flex-col gap-y-4">
                         <div class="flex items-center mt-6 gap-3">
-                            <img id="pdfImg4" class="w-5 hover:underline hover:text-blue-800" src="images/black-pdf-icon.svg" alt="">
-                            <a class="hover:underline hover:text-blue-800" href="#" onmouseover="trocarImagem('pdfImg4', 'images/blue-pdf-icon.svg')" onmouseout="trocarImagem('pdfImg4', 'images/black-pdf-icon.svg')">Conversor para PDF</a>
+                            <img id="pdfImg4" class="w-6 hover:underline hover:text-blue-800" src="images/black-pdf-icon.svg" alt="">
+                            <a class="hover:underline hover:text-blue-800" href="#" onmouseover="trocarImagem('pdfImg4', 'images/blue-pdf-icon.svg')" onmouseout="trocarImagem('pdfImg4', 'images/black-pdf-icon.svg')">Conversor de PDF</a>
                         </div>
                         <div class="flex items-center gap-3">
-                            <img id="pdfImg5" class="w-5 hover:underline hover:text-blue-800" src="images/black-pdf-icon.svg" alt="">
-                            <a class="hover:underline hover:text-blue-800" href="#" onmouseover="trocarImagem('pdfImg5', 'images/blue-pdf-icon.svg')" onmouseout="trocarImagem('pdfImg5', 'images/black-pdf-icon.svg')">Conversor para PDF</a>
+                            <img id="pdfImg10" class="w-6 hover:underline hover:text-blue-800" src="images/black-pdf-icon.svg" alt="">
+                            <a class="hover:underline hover:text-blue-800" href="#" onmouseover="trocarImagem('pdfImg10', 'images/blue-pdf-icon.svg')" onmouseout="trocarImagem('pdfImg10', 'images/black-pdf-icon.svg')">Conversor de PDF</a>
                         </div>
                         <div class="flex items-center gap-3">
-                            <img id="volumeImg6" class="w-5 hover:underline hover:text-blue-800" src="images/volume-icon.svg" alt="">
-                            <a class="hover:underline hover:text-blue-800" href="#" onmouseover="trocarImagem('volumeImg6', 'images/blue-volume-icon.svg')" onmouseout="trocarImagem('volumeImg6', 'images/volume-icon.svg')">Conversor para PDF</a>
+                            <img id="pdfImg6" class="w-6 hover:underline hover:text-blue-800" src="images/black-pdf-icon.svg" alt="">
+                            <a class="hover:underline hover:text-blue-800" href="#" onmouseover="trocarImagem('pdfImg6', 'images/blue-pdf-icon.svg')" onmouseout="trocarImagem('pdfImg6', 'images/black-pdf-icon.svg')">Conversor de PDF</a>
                         </div>
                     </div>
 
-                    <div class="flex flex-col">
+                    <div class="flex flex-col gap-y-4">
                         <div class="flex items-center mt-6 gap-3">
-                            <img id="volumeImg9" class="w-5 hover:underline hover:text-blue-800" src="images/volume-icon.svg" alt="">
-                            <a class="hover:underline hover:text-blue-800" href="#" onmouseover="trocarImagem('volumeImg9', 'images/blue-volume-icon.svg')" onmouseout="trocarImagem('volumeImg9', 'images/volume-icon.svg')">Conversor para PDF</a>
+                            <img id="pdfImg7" class="w-6 hover:underline hover:text-blue-800" src="images/black-pdf-icon.svg" alt="">
+                            <a class="hover:underline hover:text-blue-800" href="#" onmouseover="trocarImagem('pdfImg7', 'images/blue-pdf-icon.svg')" onmouseout="trocarImagem('pdfImg7', 'images/black-pdf-icon.svg')">Conversor de PDF</a>
                         </div>
-                        <div class="flex items-center mt-6 gap-3">
-                            <img id="volumeImg9" class="w-5 hover:underline hover:text-blue-800" src="images/volume-icon.svg" alt="">
-                            <a class="hover:underline hover:text-blue-800" href="#" onmouseover="trocarImagem('volumeImg9', 'images/blue-volume-icon.svg')" onmouseout="trocarImagem('volumeImg9', 'images/volume-icon.svg')">Conversor para PDF</a>
+                        <div class="flex items-center gap-3">
+                            <img id="pdfImg8" class="w-6 hover:underline hover:text-blue-800" src="images/black-pdf-icon.svg" alt="">
+                            <a class="hover:underline hover:text-blue-800" href="#" onmouseover="trocarImagem('pdfImg8', 'images/blue-pdf-icon.svg')" onmouseout="trocarImagem('pdfImg8', 'images/black-pdf-icon.svg')">Conversor de PDF</a>
                         </div>
+                        <div class="flex items-center gap-3">
+                            <img id="pdfImg9" class="w-6 hover:underline hover:text-blue-800" src="images/black-pdf-icon.svg" alt="">
+                            <a class="hover:underline hover:text-blue-800" href="#" onmouseover="trocarImagem('pdfImg9', 'images/blue-pdf-icon.svg')" onmouseout="trocarImagem('pdfImg9', 'images/black-pdf-icon.svg')">Conversor de PDF</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-30">
+                <h2 class="font-bold text-2xl">Ferramentas de Vídeo</h2>
+                <div class="flex gap-x-40">
+                    <div class="flex flex-col ml-8 gap-y-4">
                         <div class="flex items-center mt-6 gap-3">
-                            <img id="volumeImg9" class="w-5 hover:underline hover:text-blue-800" src="images/volume-icon.svg" alt="">
-                            <a class="hover:underline hover:text-blue-800" href="#" onmouseover="trocarImagem('volumeImg9', 'images/blue-volume-icon.svg')" onmouseout="trocarImagem('volumeImg9', 'images/volume-icon.svg')">Conversor para PDF</a>
+                            <img id="videoImg1" class="w-5 hover:underline hover:text-blue-800" src="images/black-video-icon.svg" alt="">
+                            <a class="hover:underline hover:text-blue-800" href="#" onmouseover="trocarImagem('videoImg1', 'images/blue-video-icon.svg')" onmouseout="trocarImagem('videoImg1', 'images/black-video-icon.svg')">Editor de Vídeo</a>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <img id="videoImg2" class="w-5 hover:underline hover:text-blue-800" src="images/black-video-icon.svg" alt="">
+                            <a class="hover:underline hover:text-blue-800" href="#" onmouseover="trocarImagem('videoImg2', 'images/blue-video-icon.svg')" onmouseout="trocarImagem('videoImg2', 'images/black-video-icon.svg')">Editor de Vídeo</a>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <img id="videoImg3" class="w-5 hover:underline hover:text-blue-800" src="images/black-video-icon.svg" alt="">
+                            <a class="hover:underline hover:text-blue-800" href="#" onmouseover="trocarImagem('videoImg3', 'images/blue-video-icon.svg')" onmouseout="trocarImagem('videoImg3', 'images/black-video-icon.svg')">Editor de Vídeo</a>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col ml-8 gap-y-4">
+                        <div class="flex items-center mt-6 gap-3">
+                            <img id="videoImg4" class="w-5 hover:underline hover:text-blue-800" src="images/black-video-icon.svg" alt="">
+                            <a class="hover:underline hover:text-blue-800" href="#" onmouseover="trocarImagem('videoImg4', 'images/blue-video-icon.svg')" onmouseout="trocarImagem('videoImg4', 'images/black-video-icon.svg')">Editor de Vídeo</a>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <img id="videoImg5" class="w-5 hover:underline hover:text-blue-800" src="images/black-video-icon.svg" alt="">
+                            <a class="hover:underline hover:text-blue-800" href="#" onmouseover="trocarImagem('videoImg5', 'images/blue-video-icon.svg')" onmouseout="trocarImagem('videoImg5', 'images/black-video-icon.svg')">Editor de Vídeo</a>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <img id="videoImg6" class="w-5 hover:underline hover:text-blue-800" src="images/black-video-icon.svg" alt="">
+                            <a class="hover:underline hover:text-blue-800" href="#" onmouseover="trocarImagem('videoImg6', 'images/blue-video-icon.svg')" onmouseout="trocarImagem('videoImg6', 'images/black-video-icon.svg')">Editor de Vídeo</a>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col ml-8 gap-y-4">
+                        <div class="flex items-center mt-6 gap-3">
+                            <img id="videoImg7" class="w-5 hover:underline hover:text-blue-800" src="images/black-video-icon.svg" alt="">
+                            <a class="hover:underline hover:text-blue-800" href="#" onmouseover="trocarImagem('videoImg7', 'images/blue-video-icon.svg')" onmouseout="trocarImagem('videoImg7', 'images/black-video-icon.svg')">Editor de Vídeo</a>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <img id="videoImg8" class="w-5 hover:underline hover:text-blue-800" src="images/black-video-icon.svg" alt="">
+                            <a class="hover:underline hover:text-blue-800" href="#" onmouseover="trocarImagem('videoImg8', 'images/blue-video-icon.svg')" onmouseout="trocarImagem('videoImg8', 'images/black-video-icon.svg')">Editor de Vídeo</a>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <img id="videoImg9" class="w-5 hover:underline hover:text-blue-800" src="images/black-video-icon.svg" alt="">
+                            <a class="hover:underline hover:text-blue-800" href="#" onmouseover="trocarImagem('videoImg9', 'images/blue-video-icon.svg')" onmouseout="trocarImagem('videoImg9', 'images/black-video-icon.svg')">Editor de Vídeo</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
+
+    <footer class="mt-20">
+        <div class="max-w-[915px] w-full m-auto border-t-[1px] border-gray-400">
+            <div class="flex justify-between p-2">
+                <p>Criado por <a class="hover:text-blue-800 hover:underline" href="https://www.linkedin.com/in/samuellucenaaragao/">Samuel Lucena</a></p>
+                <div>
+                    <a class="mr-4 hover:text-blue-800 hover:underline" href="#">Sobre</a>
+                    <a class="hover:text-blue-800 hover:underline" href="#">Privacidade</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <div class="modal w-full h-full fixed top-0 left-0 hidden bg-[#00000055]">
         <div class="modal-content rounded-2xl top-8 relative w-[650px] m-auto bg-white flex flex-col items-center">
