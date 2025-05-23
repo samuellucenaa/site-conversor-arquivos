@@ -8,7 +8,7 @@
 </head>
 <body class="font-inter">
     <header class="bg-black text-white flex justify-between items-center">
-        <div class="px-4 mt-1"><img class="w-12 h-12" src="images/logo.png" alt=""></div>
+        <div class="px-4"><img class="w-12 h-12" src="images/logo.png" alt=""></div>
         <nav>
             <ul class="relative flex items-center font-medium cursor-pointer text-[#9a9a9a]">
                 <li class="flex group p-4 hover:bg-[#232324]">
@@ -258,7 +258,7 @@
         </div>
     </footer>
 
-    <div class="modal w-full h-full fixed top-0 left-0 hidden bg-[#00000055]">
+    <div class="modal-criar w-full h-full fixed top-0 left-0 hidden bg-[#00000055]">
         <div class="modal-content rounded-2xl top-8 relative w-[650px] m-auto bg-white flex flex-col items-center">
             <button class="absolute top-[15px] right-[15px] hover:bg-gray-200 hover:cursor-pointer hover:rounded-full" onclick="fecharModal()"><img class="w-10 h-10 p-2" src="images/close-icon.svg" alt=""></button>
             <h1 class="text-4xl pt-[30px] font-bold">Crie sua conta aqui</h1>
@@ -274,16 +274,46 @@
             <div>
                 <div class="relative">
                     <img class="w-6 h-5 absolute top-[62%] left-[10px] -translate-y-[50%]" src="images/envelope-closed-icon.svg" alt="">
-                    <input class="w-[500px] mt-3 py-2 px-10 border rounded border-black shadow-md/20 shadow-black placeholder:text-black" type="email" placeholder="E-mail">
+                    <input class="w-[500px] mt-3 py-2 px-10 border rounded border-black placeholder:text-black" type="email" placeholder="E-mail">
                 </div>
                 <div class="relative">
                     <img class="w-8 h-6 absolute top-[60%] left-[4px] -translate-y-[50%]" src="images/lock-closed-icon.svg" alt="">
-                    <input id="senha" class="w-[500px] mt-3 py-2 px-[38px] border rounded border-black shadow-md/20 shadow-black placeholder:text-black" type="password" placeholder="Senha">
+                    <input id="senha" class="w-[500px] mt-3 py-2 px-[38px] border rounded border-black placeholder:text-black" type="password" placeholder="Senha">
                     <img src="images/eye-on-icon.svg" id="alternarSenha" class="w-10 h-6 cursor-pointer absolute top-[40%] right-2 -trasnlate-y-[50%]" alt="Esconder botão" onclick="alternarSenha()">                    
                 </div>
             </div>
             <button class="bg-blue-500 hover:bg-blue-600 cursor-pointer mt-5 py-2 w-[500px] rounded font-bold text-[18px] text-white">Crie a sua conta aqui</button>
-            <div class="m-12">Já tem uma conta? <a href="#" class="text-blue-500 hover:text-blue-600 hover:underline font-semibold">Entrar</a></div>
+            <div class="m-12">Já tem uma conta? <a href="#" class="text-blue-500 hover:text-blue-600 hover:underline font-semibold" onclick="abrirModal2()">Entrar</a></div>
+        </div>
+    </div>
+
+    <div class="modal-entrar hidden w-full h-full fixed top-0 left-0 bg-[#00000055]">
+        <div class="modal-content rounded-2xl top-8 relative w-[650px] m-auto bg-white flex flex-col items-center">
+            <button class="absolute top-[15px] right-[15px] hover:bg-gray-200 hover:cursor-pointer hover:rounded-full" onclick="fecharModal()"><img class="w-10 h-10 p-2" src="images/close-icon.svg" alt=""></button>
+            <h1 class="text-4xl pt-[30px] font-bold">Entrar</h1>
+            <div class="flex items-center w-[500px] mt-6 py-3 border rounded border-black cursor-pointer hover:bg-gray-200">
+                <img class="w-5 h-5 mx-4" src="images/google-icon.svg" alt="">
+                <p class="font-bold">Entrar com o Google</p>
+            </div>
+            <div class="flex items-center w-[500px] mt-3 py-3 border rounded border-black cursor-pointer hover:bg-gray-200">
+                <img class="w-7 h-6 mx-3" src="images/facebook-icon.svg" alt="">
+                <p class="font-bold">Entrar com o Facebook</p>
+            </div>
+            <p class="mt-4">ou</p>
+            <div>
+                <div class="relative">
+                    <img class="w-6 h-5 absolute top-[62%] left-[10px] -translate-y-[50%]" src="images/envelope-closed-icon.svg" alt="">
+                    <input class="w-[500px] mt-3 py-2 px-10 border rounded border-black placeholder:text-black" type="email" placeholder="E-mail">
+                </div>
+                <div class="relative">
+                    <img class="w-8 h-6 absolute top-[60%] left-[4px] -translate-y-[50%]" src="images/lock-closed-icon.svg" alt="">
+                    <input id="senha" class="w-[500px] mt-3 py-2 px-[38px] border rounded border-black placeholder:text-black" type="password" placeholder="Senha">
+                    <img src="images/eye-on-icon.svg" id="alternarSenha" class="w-10 h-6 cursor-pointer absolute top-[40%] right-2 -trasnlate-y-[50%]" alt="Esconder botão" onclick="alternarSenha()">                    
+                </div>
+            </div>
+            <button class="bg-blue-500 hover:bg-blue-600 cursor-pointer mt-5 py-2 w-[500px] rounded font-bold text-[18px] text-white">Entrar</button>
+            <div class="mt-4 text-[14px] text-blue-600 hover:underline"><a href="#">Esqueceu sua senha?</a></div>
+            <div class="my-8">Não tem uma conta? <a href="#" class="text-blue-500 hover:text-blue-600 hover:underline font-semibold">Criar uma conta</a></div>
         </div>
     </div>
     <script src="/scripts/script.js"></script>

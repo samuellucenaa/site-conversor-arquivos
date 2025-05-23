@@ -1,9 +1,16 @@
 function abrirModal(){
-    document.querySelector('.modal').classList.remove('hidden');
+    document.querySelector('.modal-criar').classList.remove('hidden');
+}
+
+function abrirModal2(){
+    document.querySelector('.modal-entrar').classList.remove('hidden');
+    document.querySelector('.modal-criar').classList.add('hidden');
 }
 
 function fecharModal(){
-    document.querySelector('.modal').classList.add('hidden');
+    document.querySelector('.modal-criar').classList.add('hidden');
+    document.querySelector('.modal-entrar').classList.add('hidden');
+
 }
 
 function trocarImagem(id, novoSrc){
