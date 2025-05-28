@@ -273,16 +273,18 @@
             <p class="mt-4">ou</p>
             <div>
                 <div class="relative">
-                    <img class="w-6 h-5 absolute top-[62%] left-[10px] -translate-y-[50%]" src="images/envelope-closed-icon.svg" alt="">
-                    <input class="w-[500px] mt-3 py-2 px-10 border rounded border-black placeholder:text-black" type="email" placeholder="E-mail">
+                    <img class="w-6 h-5 absolute mt-[33px] left-[10px] -translate-y-[50%]" src="images/envelope-closed-icon.svg" alt="">
+                    <input class="input-email1 w-[500px] mt-3 py-2 px-10 border rounded border-black placeholder:text-black" type="email" placeholder="E-mail">
+                    <p class="aviso-email1 hidden text-red-600 text-sm">Preencha com o email</p>
                 </div>
                 <div class="relative">
-                    <img class="w-8 h-6 absolute top-[60%] left-[4px] -translate-y-[50%]" src="images/lock-closed-icon.svg" alt="">
-                    <input id="senha" class="w-[500px] mt-3 py-2 px-[38px] border rounded border-black placeholder:text-black" type="password" placeholder="Senha">
-                    <img src="images/eye-on-icon.svg" id="alternarSenha" class="w-10 h-6 cursor-pointer absolute top-[40%] right-2 -trasnlate-y-[50%]" alt="Esconder botão" onclick="alternarSenha()">                    
+                    <img class="w-8 h-6 absolute mt-[33px] left-[4px] -translate-y-[50%]" src="images/lock-closed-icon.svg" alt="">
+                    <input id="senha" class="input-senha1 w-[500px] mt-3 py-2 px-[38px] border rounded border-black placeholder:text-black" type="password" placeholder="Senha">
+                    <p class="aviso-senha1 hidden text-red-600 text-sm">Preencha com a senha</p>
+                    <img src="images/eye-on-icon.svg" id="alternarSenha" class="w-10 h-6 cursor-pointer absolute top-[22px] right-2 -trasnlate-y-[50%]" alt="Esconder botão" onclick="alternarSenha()">                    
                 </div>
             </div>
-            <button class="bg-blue-500 hover:bg-blue-600 cursor-pointer mt-5 py-2 w-[500px] rounded font-bold text-[18px] text-white">Crie a sua conta aqui</button>
+            <button class="bg-blue-500 hover:bg-blue-600 cursor-pointer mt-5 py-2 w-[500px] rounded font-bold text-[18px] text-white" onclick="verificacaoInputs1()">Crie a sua conta aqui</button>
             <div class="m-12">Já tem uma conta? <a href="#" class="text-blue-500 hover:text-blue-600 hover:underline font-semibold" onclick="abrirEntrar()">Entrar</a></div>
         </div>
     </div>
@@ -304,18 +306,18 @@
                 <div class="relative">
                     <div><img class="w-6 h-5 mt-[33px] absolute left-[10px] -translate-y-[50%]" src="images/envelope-closed-icon.svg" alt=""></div>
                     
-                    <input class="input-email w-[500px] mt-3 py-2 px-10 border rounded border-black placeholder:text-black" type="email" placeholder="E-mail">
-                    <p class="aviso-email hidden text-red-600 text-sm">Preencha com o e-mail</p>
+                    <input class="input-email2 w-[500px] mt-3 py-2 px-10 border rounded border-black placeholder:text-black" type="email" placeholder="E-mail">
+                    <p class="aviso-email2 hidden text-red-600 text-sm">Preencha com o e-mail</p>
 
                 </div>
                 <div class="relative">
                     <img class="w-8 h-6 absolute mt-[33px] left-[4px] -translate-y-[50%]" src="images/lock-closed-icon.svg" alt="">
-                    <input id="senha" class="input-senha w-[500px] mt-3 py-2 px-[38px] border rounded border-black placeholder:text-black" type="password" placeholder="Senha">
-                    <p class="aviso-senha hidden text-red-600 text-sm">Preencha com a senha</p>
+                    <input id="senha" class="input-senha2 w-[500px] mt-3 py-2 px-[38px] border rounded border-black placeholder:text-black" type="password" placeholder="Senha">
+                    <p class="aviso-senha2 hidden text-red-600 text-sm">Preencha com a senha</p>
                     <img src="images/eye-on-icon.svg" id="alternarSenha" class="w-10 h-6 cursor-pointer absolute top-[22px] right-2 -trasnlate-y-[50%]" alt="Esconder botão" onclick="alternarSenha()">                    
                 </div>
             </div>
-            <button class="botao-entrar bg-blue-500 hover:bg-blue-600 cursor-pointer mt-5 py-2 w-[500px] rounded font-bold text-[18px] text-white" onclick="verificacaoInput()">Entrar</button>
+            <button class="botao-entrar bg-blue-500 hover:bg-blue-600 cursor-pointer mt-5 py-2 w-[500px] rounded font-bold text-[18px] text-white" onclick="verificacaoInputs2()">Entrar</button>
             <div class="mt-4 text-[14px] text-blue-600 hover:underline"><a href="#" onclick="abrirSenha()">Esqueceu sua senha?</a></div>
             <div class="my-8">Não tem uma conta? <a href="#" class="text-blue-500 hover:text-blue-600 hover:underline font-semibold" onclick="abrirCriar()">Criar uma conta</a></div>
         </div>

@@ -41,25 +41,48 @@ function alternarSenha(){
     }
 }
 
-function verificacaoInput(){
-    const inputEmail = document.querySelector('.input-email');
-    const avisoEmail = document.querySelector('.aviso-email');
-    const inputSenha = document.querySelector('.input-senha');
-    const avisoSenha = document.querySelector('.aviso-senha');
+function verificacaoInputs1(){
+    const inputEmail1 = document.querySelector('.input-email1');
+    const avisoEmail1 = document.querySelector('.aviso-email1');
+    const inputSenha1 = document.querySelector('.input-senha1');
+    const avisoSenha1 = document.querySelector('.aviso-senha1');
 
-    if(!inputEmail.value.trim()){
-        inputEmail.classList.add('border-red-600');
-        avisoEmail.classList.remove('hidden');
+    if(!inputEmail1.value.trim()){
+        inputEmail1.classList.add('border-red-600');
+        avisoEmail1.classList.remove('hidden');
     } else{
-        inputEmail.classList.remove('border-red-600');
-        avisoEmail.classList.add('hidden');
+        inputEmail1.classList.remove('border-red-600');
+        avisoEmail1.classList.add('hidden');
     }
 
-    if(!inputSenha.value.trim()){
-        inputSenha.classList.add('border-red-600');
-        avisoSenha.classList.remove('hidden');
+    if(!inputSenha1.value.trim()){
+        inputSenha1.classList.add('border-red-600');
+        avisoSenha1.classList.remove('hidden');
     } else{
-        inputSenha.classList.remove('border-red-600');
-        avisoSenha.classList.add('hidden');
+        inputSenha1.classList.remove('border-red-600');
+        avisoSenha1.classList.add('hidden');
+    }
+}
+
+function verificacaoInputs2(){
+    const inputEmail2 = document.querySelector('.input-email2');
+    const avisoEmail2 = document.querySelector('.aviso-email2');
+    const inputSenha2 = document.querySelector('.input-senha2');
+    const avisoSenha2 = document.querySelector('.aviso-senha2');
+
+    if(!inputEmail2.value.trim()){
+        inputEmail2.classList.add('border-red-600');
+        avisoEmail2.classList.remove('hidden');
+    } else{
+        inputEmail2.classList.remove('border-red-600');
+        avisoEmail2.classList.add('hidden');
+    }
+
+    if(!inputSenha2.value.trim()){
+        inputSenha2.classList.add('border-red-600');
+        avisoSenha2.classList.remove('hidden');
+    } else{
+        inputSenha2.classList.remove('border-red-600');
+        avisoSenha2.classList.add('hidden');
     }
 }
