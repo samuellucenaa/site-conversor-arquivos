@@ -41,10 +41,25 @@ function alternarSenha(){
     }
 }
 
-function clicou(){
+function verificacaoInput(){
     const inputEmail = document.querySelector('.input-email');
     const avisoEmail = document.querySelector('.aviso-email');
-    
-    inputEmail.classList.add('border-red-600');
-    avisoEmail.classList.remove('hidden');
+    const inputSenha = document.querySelector('.input-senha');
+    const avisoSenha = document.querySelector('.aviso-senha');
+
+    if(!inputEmail.value.trim()){
+        inputEmail.classList.add('border-red-600');
+        avisoEmail.classList.remove('hidden');
+    } else{
+        inputEmail.classList.remove('border-red-600');
+        avisoEmail.classList.add('hidden');
+    }
+
+    if(!inputSenha.value.trim()){
+        inputSenha.classList.add('border-red-600');
+        avisoSenha.classList.remove('hidden');
+    } else{
+        inputSenha.classList.remove('border-red-600');
+        avisoSenha.classList.add('hidden');
+    }
 }
