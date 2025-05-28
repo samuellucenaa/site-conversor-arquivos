@@ -29,15 +29,25 @@ function trocarImagem(id, novoSrc){
 }
 
 function alternarSenha(){
-    let input = document.getElementById('senha');
-    let img = document.getElementById('alternarSenha');
+    let input1 = document.querySelector('.input-senha1')
+    let input2 = document.querySelector('.input-senha2');
+    let img1 = document.querySelector('.alternarSenha1');
+    let img2 = document.querySelector('.alternarSenha2')
 
-    if(input.type === 'password'){
-        input.type = 'text';
-        img.src = 'images/eye-off-icon.svg';
+    if(input1.type === 'password'){
+        input1.type = 'text';
+        img1.src = 'images/eye-off-icon.svg';
     } else {
-        input.type = 'password';
-        img.src = 'images/eye-on-icon.svg';
+        input1.type = 'password';
+        img1.src = 'images/eye-on-icon.svg';
+    }
+
+    if(input2.type === 'password'){
+        input2.type = 'text';
+        img2.src = 'images/eye-off-icon.svg';
+    } else {
+        input2.type = 'password';
+        img2.src = 'images/eye-on-icon.svg';
     }
 }
 
