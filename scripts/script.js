@@ -86,3 +86,16 @@ function verificacaoInputs2(){
         avisoSenha2.classList.add('hidden');
     }
 }
+
+function verificacaoRecSenha(){
+    const inputEmailRec = document.querySelector('.input-email-rec');
+    const avisoEmailRec = document.querySelector('.aviso-email-rec')
+
+    if(!inputEmailRec.value.trim()){
+        inputEmailRec.classList.add('border-red-600');
+        avisoEmailRec.classList.remove('hidden');
+    } else{
+        inputEmailRec.classList.remove('border-red-600');
+        avisoEmailRec.classList.add('hidden');
+    }
+}

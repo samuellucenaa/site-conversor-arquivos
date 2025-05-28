@@ -275,7 +275,7 @@
                 <div class="relative">
                     <img class="w-6 h-5 absolute mt-[33px] left-[10px] -translate-y-[50%]" src="images/envelope-closed-icon.svg" alt="">
                     <input class="input-email1 w-[500px] mt-3 py-2 px-10 border rounded border-black placeholder:text-black" type="email" placeholder="E-mail">
-                    <p class="aviso-email1 hidden text-red-600 text-sm">Preencha com o email</p>
+                    <p class="aviso-email1 hidden text-red-600 text-sm">Preencha com o e-mail</p>
                 </div>
                 <div class="relative">
                     <img class="w-8 h-6 absolute mt-[33px] left-[4px] -translate-y-[50%]" src="images/lock-closed-icon.svg" alt="">
@@ -289,7 +289,7 @@
         </div>
     </div>
 
-    <div class="modal-entrar w-full h-full overflow-y-auto fixed top-0 left-0 bg-[#00000055]">
+    <div class="modal-entrar hidden w-full h-full overflow-y-auto fixed top-0 left-0 bg-[#00000055]">
         <div class="modal-content rounded-2xl mb-20 top-8 relative w-[650px] m-auto bg-white flex flex-col items-center">
             <button class="absolute top-[15px] right-[15px] hover:bg-gray-200 hover:cursor-pointer hover:rounded-full" onclick="fecharModal()"><img class="w-10 h-10 p-2" src="images/close-icon.svg" alt=""></button>
             <h1 class="text-4xl pt-[30px] font-bold">Entrar</h1>
@@ -330,11 +330,12 @@
             <p class="text-gray-700">Insira seu e-mail e enviaremos o link para redefinir a senha</p>
             
             <div class="relative">
-                <img class="w-6 h-5 absolute top-[62%] left-[10px] -translate-y-[50%]" src="images/envelope-closed-icon.svg" alt="">
-                <input class="w-[500px] mt-3 py-2 px-10 border rounded border-black placeholder:text-black" type="email" placeholder="E-mail">
+                <img class="w-6 h-5 absolute mt-[33px] left-[10px] -translate-y-[50%]" src="images/envelope-closed-icon.svg" alt="">
+                <input class="input-email-rec w-[500px] mt-3 py-2 px-10 border rounded border-black placeholder:text-black" type="email" placeholder="E-mail">
+                <p class="aviso-email-rec hidden text-red-600 text-sm">Preencha com o e-mail</p>
             </div>
 
-            <button class="bg-blue-500 hover:bg-blue-600 cursor-pointer mt-5 py-2 w-[500px] rounded font-bold text-[18px] text-white">Redefinir</button>
+            <button class="bg-blue-500 hover:bg-blue-600 cursor-pointer mt-5 py-2 w-[500px] rounded font-bold text-[18px] text-white" onclick="verificacaoRecSenha()">Redefinir</button>
             <a class="text-blue-500 my-8 font-semibold hover:underline" href="#" onclick="abrirEntrar()">Entrar</a>
         </div>
     </div>
